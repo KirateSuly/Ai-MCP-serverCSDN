@@ -31,6 +31,8 @@ public interface ICSDNService {
     @Headers({
             "Content-Type: application/json",
             "x-ca-key: 203803574",
+            "x-ca-nonce: 5f5d3494-19bf-4b89-a6f3-e949135380d2",
+            "x-ca-signature: ZTmzH/k4F59QnMzewLqV4y5QFfPF0sdSFtBxHdORkQk=",
             "x-ca-signature-headers: x-ca-key,x-ca-nonce"
     })
     Call<SaveArticleResponseDTO> saveArticle(@Header("Cookie") String cookie,
